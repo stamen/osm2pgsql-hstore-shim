@@ -9,5 +9,5 @@ This assumes that `osm2pgsql` has been instructed to use a prefix of `hstore`
 (`-p hstore`), e.g.:
 
 ```bash
-osm2pgsql -c -d osm -C4000 -s --number-processes 2 -G -j -S hstore.style --unlogged -p hstore -E 3857 san-francisco.osm.pbf
+osm2pgsql -c -s -G -j -S hstore.style -p hstore -E 3857 san-francisco.osm.pbf
 ```
